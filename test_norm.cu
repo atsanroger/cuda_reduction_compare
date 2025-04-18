@@ -1,5 +1,10 @@
-/*!\n      @file    test_norm.cu\n      @brief   Benchmark norm2 reduction and memory bandwidth\n      @author  Wei-Lun Chen (wlchen)
-      @date    $LastChangedDate: 2025-04-19 13:51:53 #$\n      @version $LastChangedRevision: 1 $\n*/
+/*!
+      @file    test_norm.cu
+      @brief
+      @author  Wei-Lun Chen (wlchen)
+      @date    $LastChangedDate: 2025-04-19 13:51:53 #$
+      @version $LastChangedRevision: 0 $
+*/
 
 #include <cstdio>
 #include <cmath>
