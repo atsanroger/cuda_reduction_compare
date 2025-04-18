@@ -16,10 +16,18 @@ This reduces kernel launch overhead and improves memory locality.
 ### 3. Separate Norm2 + Single Reduction
 The third method performs `norm2` followed by a single reduction kernel over the entire result buffer, which is the orign style in Bridge++
 
-## How to Run
+## How to Compile
 
 ```bash
 make -j 8
 ```
 
 This project supports GPUs from Pascal to Hopper architectures.
+
+## How to Use
+
+```bash
+./test_norm nvol
+```
+
+Set the argument with some your lucky integral 
