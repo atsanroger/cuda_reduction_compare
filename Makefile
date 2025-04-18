@@ -1,13 +1,13 @@
 ################################################################################
 #        @author  Wei-Lun Chen (wlchen) 
 #                 $LastChangedBy: wlchen $
-#        @date    $LastChangedDate:: 2024-10-02 19:34:22 #$
-#        @version $LastChangedRevision: 2562 $
+#        @date    $LastChangedDate:: 2025-04-19 19:34:22 #$
+#        @version $LastChangedRevision: 0 $
 ################################################################################
 SHELL := /bin/bash
 
 ARCH = -gencode=arch=compute_60,code=sm_60 \
-			 -gencode=arch=compute_70,code=sm_70 \
+       -gencode=arch=compute_70,code=sm_70 \
        -gencode=arch=compute_80,code=sm_80 \
        -gencode=arch=compute_86,code=sm_86 \
        -gencode=arch=compute_90,code=sm_90
