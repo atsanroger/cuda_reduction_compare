@@ -1,5 +1,7 @@
 # CUDA Reduction-Norm2 Comparison
 
+ `norm2` and  `reduction` are important building block of linear algebra, which is often used to obtain the length of a vector.
+
 This project compares three types of reduction strategies plus the `norm2` function used in the [Bridge++ Lattice QCD framework](https://bridge.kek.jp/Lattice-code/).
 
 ## Implemented Methods
