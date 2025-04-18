@@ -31,3 +31,7 @@ This project supports GPUs from Pascal to Hopper architectures.
 ```
 
 Set the argument with your lucky number!
+
+## Pic
+
+Bandwidth and execution time are print in the main function, a simple pic generator against array length is written in the jupyter note
