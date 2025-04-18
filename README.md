@@ -45,6 +45,12 @@ This project supports GPUs from Pascal to Hopper architectures.
 
 Set the argument `nvol` with your lucky number!
 
-## Pic
+## Performance measurement
 
-Bandwidth and execution time are print in the main function, a simple pic generator against array length is written in the jupyter note
+Despite significant fluctuations from the system, a clear trend can still be observed in my local RTX 3080.
+
+
+![Execution Time](imag/EXECUTIONTIME.png)
+![Bandwidth](imag/BW.png)
+
+
