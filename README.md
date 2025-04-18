@@ -30,4 +30,4 @@ This project supports GPUs from Pascal to Hopper architectures.
 ./test_norm nvol
 ```
 
-Set the argument with some your lucky integral 
+Set the argument with your lucky number!
