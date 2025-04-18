@@ -1,4 +1,4 @@
-# CUDA Reduction Comparison
+# CUDA Reduction-Norm2 Comparison
 
 This project compares three types of reduction strategies plus the `norm2` function used in the [Bridge++ Lattice QCD framework](https://bridge.kek.jp/Lattice-code/).
 
