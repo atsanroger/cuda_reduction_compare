@@ -14,9 +14,12 @@ The second method fuses the `norm2` computation and per-block reduction into a s
 This reduces kernel launch overhead and improves memory locality.
 
 ### 3. Separate Norm2 + Single Reduction
-The third method performs `norm2` followed by a single reduction kernel over the entire result buffer.
+The third method performs `norm2` followed by a single reduction kernel over the entire result buffer, which is the orign style in Bridge++
 
 ## How to Run
 
 ```bash
 make -j 8
+```
+
+This project supports GPUs from Pascal to Hopper architectures.
