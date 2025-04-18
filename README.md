@@ -43,7 +43,7 @@ This project supports GPUs from Pascal to Hopper architectures.
 ./test_norm nvol
 ```
 
-Set the argument with your lucky number!
+Set the argument `nvol` with your lucky number!
 
 ## Pic
 
