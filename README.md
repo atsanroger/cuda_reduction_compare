@@ -9,14 +9,25 @@ This project compares three types of reduction strategies plus the `norm2` funct
 ### 1. Harris-Style Reduction + Norm2
 The first method is based on the well-known CUDA reduction techniques introduced by Mark Harris ([PDF link](https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf)).  
 All optimization strategies described in the paper are implemented, except for the "Idle Threads" mitigation.  
-Execution flow: `norm2` → multi-block reduction → final single-block reduction.
+### 🔁 **Execution Flow**
+
+`norm2` ➡️ `multi-block reduction` ➡️ `final single-block reduction`
 
 ### 2. Fused Kernel (Norm2 + Partial Reduction)
 The second method fuses the `norm2` computation and per-block reduction into a single kernel, followed by a final single-block reduction kernel.  
 This reduces kernel launch overhead and improves memory locality.
 
+### 🔁 **Execution Flow**
+
+`norm2+multi-block reduction fused kernel` ➡️ `final single-block reduction`
+
+
 ### 3. Separate Norm2 + Single Reduction
 The third method performs `norm2` followed by a single reduction kernel over the entire result buffer, which is the orign style in Bridge++
+
+### 🔁 **Execution Flow**
+
+`norm2` ➡️ `Single-block reduction`
 
 ## How to Compile
 
